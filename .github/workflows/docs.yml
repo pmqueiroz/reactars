@@ -1,5 +1,8 @@
 name: Deploy Docs
-on: [push]
+on:
+  push:
+    branches:
+      - main
   
 jobs:
   build-and-deploy:
@@ -14,6 +17,7 @@ jobs:
           yarn
           yarn build
           yarn export
+          touch out/.nojekyll
 
       - name: Deploy 🚀
         uses: JamesIves/github-pages-deploy-action@4.1.5
