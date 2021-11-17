@@ -28,4 +28,5 @@ jobs:
 
       - name: Build 🚀
         run: |
+          cd docs
           yarn build
