@@ -2,6 +2,7 @@ node_modules
 *.js
 *.jsx
 !*.config.js
+!.storybook/**
 !pre-build.js
 dist
 build
