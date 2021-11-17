@@ -2,3 +2,5 @@ node_modules
 *.js
 *.jsx
 !*.config.js
+dist
+build
