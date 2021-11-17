@@ -2,5 +2,6 @@ node_modules
 *.js
 *.jsx
 !*.config.js
+!pre-build.js
 dist
 build
