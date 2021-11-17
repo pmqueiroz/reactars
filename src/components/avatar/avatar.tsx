@@ -1,19 +1,43 @@
 import React from 'react'
 import './styles.scss'
 
-export interface AvatarProps extends React.HTMLAttributes<HTMLDivElement> {
-   badgeType?: 'none' | 'notification' | 'status'
+type Status = 'online' | 'busy' | 'idle' | 'offline'
+
+interface IntrinsicBadgeTypes {
+   none: {
+      name: string
+   }
+   notification: {
+      count: number
+   }
+   status: {
+      status: Status
+   }
 }
 
-const defaultProps: AvatarProps = {
-   badgeType: 'none'
+type AllowedBadgeTypes = 'none' | 'notification' | 'status'
+type DefaultBadgeType = 'none'
+
+type WithBadgeTypesIntrinsicProps<
+   BadgeType extends keyof IntrinsicBadgeTypes, 
+   OwnProps
+> = IntrinsicBadgeTypes[BadgeType] & OwnProps & { badgeType: BadgeType }
+
+interface AvatarOwnProps extends React.HTMLAttributes<HTMLDivElement> {
+   cleiton?: string
+   badgeType?: AllowedBadgeTypes
 }
 
-export const Avatar = (props: AvatarProps = defaultProps) => {
-   const { badgeType, ...restProps } = props
+export type AvatarProps<
+   BadgeType extends AllowedBadgeTypes = DefaultBadgeType
+> = WithBadgeTypesIntrinsicProps<BadgeType, AvatarOwnProps>
+
+
+export const Avatar = <BageType extends AllowedBadgeTypes = DefaultBadgeType>(props: AvatarProps<BageType>) => {
+   const { badgeType = 'none', ...restProps } = props
 
    return (
-      <div data-testid="reactar-avatar-wrapper" data-badgetype={badgeType} {...restProps}>
+      <div data-testid="reactar-avatar-wrapper" data-name={name} data-badgetype={badgeType} {...restProps}>
          Avatar
       </div>
    )
