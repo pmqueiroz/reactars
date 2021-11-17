@@ -1,0 +1,32 @@
+name: Build
+on: [push]
+  
+jobs:
+  reactar:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout 🛎️
+        uses: actions/checkout@v2.3.1
+
+      - name: Install 🔧
+        run: |
+          yarn
+
+      - name: Build 🚀
+        run: |
+          yarn build
+  docs:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout 🛎️
+        uses: actions/checkout@v2.3.1
+
+      - name: Install 🔧
+        run: |
+          cd docs
+          yarn
+
+      - name: Build 🚀
+        run: |
+          cd docs
+          yarn build

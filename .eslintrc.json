@@ -45,5 +45,5 @@
         "@typescript-eslint/no-explicit-any": 0,
         "@typescript-eslint/ban-types": "warn"
     },
-    "ignorePatterns": ["webpack.config.js", "node_modules/", "build/", "dist/", "docs/"]
+    "ignorePatterns": ["*.config.js", "node_modules/", "build/", "dist/", "docs/"]
 }
