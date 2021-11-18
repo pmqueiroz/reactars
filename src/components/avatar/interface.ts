@@ -2,7 +2,7 @@ import { CSSProperties } from 'react'
 
 export type Status = 'online' | 'busy' | 'idle' | 'offline'
 export type BadgeColor = Record<'notification' | Status, CSSProperties['backgroundColor']>
-export type BadgePosition = 'top-left' | 'top-right' | 'bottom-left' | 'top-right'
+export type BadgePosition = 'top-left' | 'top-right' | 'bottom-left' | 'bottom-right'
 
 export interface IntrinsicBadgeTypesProps {
    none: {
@@ -27,7 +27,7 @@ export type WithBadgeTypesIntrinsicProps<
 > = IntrinsicBadgeTypesProps[BadgeType] & OwnProps & { badgeType: BadgeType }
 
 export interface AvatarStylesOwnProps {
-   radii: Radii | CSSProperties['borderRadius']
+   radii: Radii
    url?: string
    badgePosition: BadgePosition
    badgeColor: BadgeColor

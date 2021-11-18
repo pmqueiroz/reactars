@@ -22,6 +22,10 @@ export const Avatar = <BageType extends AllowedBadgeTypes = DefaultBadgeType>(pr
       online: '#50CA42'
    }
 
+   const overlapProps = {
+      count: (props as unknown as AvatarProps<'notification'>).count > 99 ? 99 : (props as unknown as AvatarProps<'notification'>).count,
+   }
+
    const stylesProps = {
       size: 248,
       backgroundColor: '#2A2C2C',
@@ -31,7 +35,8 @@ export const Avatar = <BageType extends AllowedBadgeTypes = DefaultBadgeType>(pr
       badgeColor,
       status: 'online',
       notificationTextColor: '#FFFFFF',
-      ...restProps
+      ...restProps,
+      ...overlapProps
    }
 
    return (

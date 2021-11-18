@@ -4,29 +4,7 @@ import { AvatarProps, AvatarStylesOwnProps } from './interface'
 import { Merge } from 'type-fest'
 
 import { toRem } from '../../helpers'
-
-const badgePositionProps = {
-   'top-left': css`
-      left: 50%;
-      top: 50%;
-      transform: translate(-170%, -170%);
-   `,
-   'top-right': css`
-      left: 50%;
-      top: 50%;
-      transform: translate(70%, -170%);
-   `,
-   'bottom-left': css`
-      left: 50%;
-      top: 50%;
-      transform: translate(-170%, 70%); 
-   `,
-   'bottom-right': css`
-      left: 50%;
-      top: 50%;
-      transform: translate(70%, 70%);
-   `,
-}
+import { badgePositionMap } from './partials/badgePositionMap'
 
 const badgeIntrinsicProps = (props: AvatarStylesOwnProps) => css`
    position: absolute;
@@ -39,7 +17,7 @@ const badgeIntrinsicProps = (props: AvatarStylesOwnProps) => css`
    width:calc(${toRem(props.size)} / 4);
    height:calc(${toRem(props.size)} / 4);
    border-radius: 50%;
-   ${() => badgePositionProps[props.badgePosition]};
+   ${() => badgePositionMap[props.radii][props.badgePosition]};
 `
 
 export const Wrapper = styled.div`
