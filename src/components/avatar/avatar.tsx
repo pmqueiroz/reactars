@@ -40,6 +40,6 @@ export const Avatar = <BageType extends AllowedBadgeTypes = DefaultBadgeType>(pr
    }
 
    return (
-      <Wrapper letter={letter} {...stylesProps} />
+      <Wrapper data-testid="reactra" letter={letter} {...stylesProps} />
    )
 }
