@@ -27,7 +27,7 @@ export const Avatar = <BageType extends AllowedBadgeTypes = DefaultBadgeType>(pr
    }
 
    const stylesProps = {
-      size: 248,
+      size: 48,
       backgroundColor: '#2A2C2C',
       radii: 'circle',
       badgePosition: 'top-right',

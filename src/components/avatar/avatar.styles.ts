@@ -22,6 +22,7 @@ const badgeIntrinsicProps = (props: AvatarStylesOwnProps) => css`
 
 export const Wrapper = styled.div`
    display: flex;
+   position: relative;
    align-items: center;
    justify-content: center;
    width: ${(props: AvatarStylesOwnProps) => toRem(props.size)};
