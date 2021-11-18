@@ -1,7 +1,7 @@
 import React from 'react'
 
 import { Wrapper } from './avatar.styles'
-import { AllowedBadgeTypes, DefaultBadgeType, AvatarProps } from './interface'
+import { AllowedBadgeTypes, DefaultBadgeType, AvatarProps, BadgeColor } from './interface'
 
 const allowedBadgeTypesMap: AllowedBadgeTypes[] = ['none', 'notification', 'status']
 
@@ -14,10 +14,23 @@ export const Avatar = <BageType extends AllowedBadgeTypes = DefaultBadgeType>(pr
 
    const letter = props.name?.charAt(0) || '?'
 
+   const badgeColor: BadgeColor = {
+      notification: '#E65A4D',
+      busy: '#E65A4D',
+      idle: '#F7C656',
+      offline: '#CCCCCC',
+      online: '#50CA42'
+   }
+
    const stylesProps = {
-      size: 48,
+      size: 248,
       backgroundColor: '#2A2C2C',
       radii: 'circle',
+      badgePosition: 'top-right',
+      badgeType,
+      badgeColor,
+      status: 'online',
+      notificationTextColor: '#FFFFFF',
       ...restProps
    }
 

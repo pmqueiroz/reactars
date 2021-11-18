@@ -1,6 +1,8 @@
 import { CSSProperties } from 'react'
 
 export type Status = 'online' | 'busy' | 'idle' | 'offline'
+export type BadgeColor = Record<'notification' | Status, CSSProperties['backgroundColor']>
+export type BadgePosition = 'top-left' | 'top-right' | 'bottom-left' | 'top-right'
 
 export interface IntrinsicBadgeTypesProps {
    none: {
@@ -8,6 +10,7 @@ export interface IntrinsicBadgeTypesProps {
    }
    notification: {
       count: number
+      notificationTextColor: CSSProperties['color']
    }
    status: {
       status: Status
@@ -25,6 +28,9 @@ export type WithBadgeTypesIntrinsicProps<
 
 export interface AvatarStylesOwnProps {
    radii: Radii | CSSProperties['borderRadius']
+   url?: string
+   badgePosition: BadgePosition
+   badgeColor: BadgeColor
    backgroundColor: string
    letter: string
    size: number
