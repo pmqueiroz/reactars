@@ -5,10 +5,10 @@ import { Avatar } from './avatar'
 
 describe('<Avatar />', () => {
    beforeEach(() => {
-      render(<Avatar />)
+      render(<Avatar badgeType="none" name="Peam" />)
    })
 
    it('should render', () => {
-      expect(screen.getByTestId(/reactar-avatar-wrapper/i)).toBeInTheDocument()
+      expect(screen.getByTestId(/reactra/i)).toHaveAttribute('name', 'Peam')
    })
 })

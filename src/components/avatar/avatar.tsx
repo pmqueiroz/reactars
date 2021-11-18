@@ -1,20 +1,45 @@
 import React from 'react'
-import './styles.scss'
 
-export interface AvatarProps extends React.HTMLAttributes<HTMLDivElement> {
-   badgeType?: 'none' | 'notification' | 'status'
-}
+import { Wrapper } from './avatar.styles'
+import { AllowedBadgeTypes, DefaultBadgeType, AvatarProps, BadgeColor } from './interface'
 
-const defaultProps: AvatarProps = {
-   badgeType: 'none'
-}
+const allowedBadgeTypesMap: AllowedBadgeTypes[] = ['none', 'notification', 'status']
 
-export const Avatar = (props: AvatarProps = defaultProps) => {
-   const { badgeType, ...restProps } = props
+export const Avatar = <BageType extends AllowedBadgeTypes = DefaultBadgeType>(props: AvatarProps<BageType>) => {
+   const {badgeType, ...restProps} = props
+
+   if(!allowedBadgeTypesMap.includes(badgeType)) {
+      throw new Error('badgeType is not allowed')
+   }
+
+   const letter = props.name?.charAt(0) || '?'
+
+   const badgeColor: BadgeColor = {
+      notification: '#E65A4D',
+      busy: '#E65A4D',
+      idle: '#F7C656',
+      offline: '#CCCCCC',
+      online: '#50CA42'
+   }
+
+   const overlapProps = {
+      count: (props as unknown as AvatarProps<'notification'>).count > 99 ? 99 : (props as unknown as AvatarProps<'notification'>).count,
+   }
+
+   const stylesProps = {
+      size: 48,
+      backgroundColor: '#2A2C2C',
+      radii: 'circle',
+      badgePosition: 'top-right',
+      badgeType,
+      badgeColor,
+      status: 'online',
+      notificationTextColor: '#FFFFFF',
+      ...restProps,
+      ...overlapProps
+   }
 
    return (
-      <div data-testid="reactar-avatar-wrapper" data-badgetype={badgeType} {...restProps}>
-         Avatar
-      </div>
+      <Wrapper data-testid="reactra" letter={letter} {...stylesProps} />
    )
 }
