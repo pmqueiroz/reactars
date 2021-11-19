@@ -10,7 +10,7 @@ export interface IntrinsicBadgeTypesProps {
    }
    notification: {
       count: number
-      notificationTextColor: CSSProperties['color']
+      notificationTextColor?: CSSProperties['color']
    }
    status: {
       status: Status
