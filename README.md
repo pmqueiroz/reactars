@@ -45,7 +45,7 @@ import { ReactarsNotification, ReactarsStatus, ReactarsDefault } from 'reactars'
 
 ### Usage Examples
 
-```ts
+```js
 <Reactars badgeType="status" name="pmqueiroz" status="online" />
 
 <Reactars badgeType="notification" name="pmqueiroz" count={3} />
