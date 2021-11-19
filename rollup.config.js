@@ -12,6 +12,7 @@ export default {
       exports: 'named',
       sourcemap: true,
       strict: true,
+      preserveModulesRoot: 'src'
     },
   ],
   preserveModules: true,
