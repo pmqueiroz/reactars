@@ -44,3 +44,9 @@ export const Avatar = <BageType extends AllowedBadgeTypes = DefaultBadgeType>(pr
       <Wrapper data-testid="reactars" {...stylesProps} />
    )
 }
+
+export const ReactarsNotification = (props: Omit<AvatarProps<'notification'>, 'badgeType'>) => <Avatar<'notification'> badgeType="notification"  {...props} />
+
+export const ReactarsStatus = (props: Omit<AvatarProps<'status'>, 'badgeType'>) => <Avatar<'status'> badgeType="status"  {...props} />
+
+export const ReactarsDefault = (props: Omit<AvatarProps<'none'>, 'badgeType'>) => <Avatar<'none'> badgeType="none"  {...props} />
