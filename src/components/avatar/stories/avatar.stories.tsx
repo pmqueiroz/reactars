@@ -30,26 +30,26 @@ export default {
 const circle = [
    {
       badgeType: 'notification',
-      name: 'Reactra',
+      name: 'Reactar',
       count: 2,
       url: 'https://user-images.githubusercontent.com/54639269/142344983-bbc7ced5-ef64-4918-b84f-c758c5151a07.jpeg'
    },
    {
       badgeType: 'status',
       status: 'online',
-      name: 'Reactra',
+      name: 'Reactar',
       url: 'https://user-images.githubusercontent.com/54639269/142344983-bbc7ced5-ef64-4918-b84f-c758c5151a07.jpeg'
    },   
    {
       badgeType: 'status',
       status: 'idle',
-      name: 'Reactra',
+      name: 'Reactar',
       url: 'https://user-images.githubusercontent.com/54639269/142344983-bbc7ced5-ef64-4918-b84f-c758c5151a07.jpeg'
    },   
    {
       badgeType: 'status',
       status: 'busy',
-      name: 'Reactra'
+      name: 'Reactar'
    },   
    {
       badgeType: 'status',
@@ -62,7 +62,7 @@ const rounded = [
    {
       badgeType: 'notification',
       radii: 'rounded',
-      name: 'Reactra',
+      name: 'Reactar',
       count: 2,
       url: 'https://user-images.githubusercontent.com/54639269/142344983-bbc7ced5-ef64-4918-b84f-c758c5151a07.jpeg'
    },
@@ -70,21 +70,21 @@ const rounded = [
       badgeType: 'status',
       radii: 'rounded',
       status: 'online',
-      name: 'Reactra',
+      name: 'Reactar',
       url: 'https://user-images.githubusercontent.com/54639269/142344983-bbc7ced5-ef64-4918-b84f-c758c5151a07.jpeg'
    },   
    {
       badgeType: 'status',
       radii: 'rounded',
       status: 'idle',
-      name: 'Reactra',
+      name: 'Reactar',
       url: 'https://user-images.githubusercontent.com/54639269/142344983-bbc7ced5-ef64-4918-b84f-c758c5151a07.jpeg'
    },   
    {
       badgeType: 'status',
       radii: 'rounded',
       status: 'busy',
-      name: 'Reactra'
+      name: 'Reactar'
    },   
    {
       badgeType: 'status',
@@ -98,7 +98,7 @@ const square = [
    {
       badgeType: 'notification',
       radii: 'square',
-      name: 'Reactra',
+      name: 'Reactar',
       count: 2,
       url: 'https://user-images.githubusercontent.com/54639269/142344983-bbc7ced5-ef64-4918-b84f-c758c5151a07.jpeg'
    },
@@ -106,21 +106,21 @@ const square = [
       badgeType: 'status',
       radii: 'square',
       status: 'online',
-      name: 'Reactra',
+      name: 'Reactar',
       url: 'https://user-images.githubusercontent.com/54639269/142344983-bbc7ced5-ef64-4918-b84f-c758c5151a07.jpeg'
    },   
    {
       badgeType: 'status',
       radii: 'square',
       status: 'idle',
-      name: 'Reactra',
+      name: 'Reactar',
       url: 'https://user-images.githubusercontent.com/54639269/142344983-bbc7ced5-ef64-4918-b84f-c758c5151a07.jpeg'
    },   
    {
       badgeType: 'status',
       radii: 'square',
       status: 'busy',
-      name: 'Reactra'
+      name: 'Reactar'
    },   
    {
       badgeType: 'status',
