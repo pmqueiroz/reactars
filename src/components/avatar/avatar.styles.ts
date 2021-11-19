@@ -34,7 +34,7 @@ export const Wrapper = styled.div`
       'notification': css`
          &::before {
             content: '${(props: Merge<AvatarStylesOwnProps, Partial<Pick<AvatarProps<'notification'>, 'count'>>>) => props.count}';
-            background-color: ${(props: AvatarStylesOwnProps) => props.badgeColor.notification};
+            background-color: ${(props: AvatarStylesOwnProps) => props.badgeColors.notification};
             color: ${(props: Merge<AvatarStylesOwnProps, Partial<Pick<AvatarProps<'notification'>, 'notificationTextColor'>>>) => props.notificationTextColor};
             ${badgeIntrinsicProps}
          }
@@ -42,7 +42,7 @@ export const Wrapper = styled.div`
       'status': css`
          &::before {
             content: '';
-            background-color: ${(props: Merge<AvatarStylesOwnProps, Partial<Pick<AvatarProps<'status'>, 'status'>>>) => props.badgeColor[props.status || 'offline']};
+            background-color: ${(props: Merge<AvatarStylesOwnProps, Partial<Pick<AvatarProps<'status'>, 'status'>>>) => props.badgeColors[props.status || 'offline']};
             ${badgeIntrinsicProps}
          }
       `
