@@ -3,9 +3,9 @@
 # Rectar
 A React lib to generate easily customizable avatars
 
-![GitHub](https://img.shields.io/github/license/pmqueiroz/reactar?style=flat-square)
-![npm](https://img.shields.io/npm/v/reactar?style=flat-square)
-![npm type definitions](https://img.shields.io/npm/types/reactar?style=flat-square)
+![GitHub](https://img.shields.io/github/license/pmqueiroz/reactars?style=flat-square)
+![npm](https://img.shields.io/npm/v/reactars?style=flat-square)
+![npm type definitions](https://img.shields.io/npm/types/reactars?style=flat-square)
 
 
    
@@ -16,27 +16,27 @@ A React lib to generate easily customizable avatars
 ### Using Yarn
 
 ```
-yarn add reactar
+yarn add reactars
 ```
 
 ### Using Npm
 
 ```
-npm i reactar
+npm i reactars
 ```
 ## Usage
 
 ### Importing
 
-You can import reactar component as default and use all modes 
+You can import reactars component as default and use all modes 
 
 ```ts
-import Reactar from 'reactar'
+import Reactars from 'reactars'
 ```
 or import separately each one
 
 ```ts
-import { ReactarNotification, ReactarStatus, ReactarDefault } from 'reactar'
+import { ReactarsNotification, ReactarsStatus, ReactarsDefault } from 'reactars'
 ```
 
 ### Examples
@@ -46,16 +46,16 @@ import { ReactarNotification, ReactarStatus, ReactarDefault } from 'reactar'
 ### Usage Examples
 
 ```ts
-<Reactar badgeType="status" name="pmqueiroz" status="online" />
+<Reactars badgeType="status" name="pmqueiroz" status="online" />
 
-<Reactar badgeType="notification" name="pmqueiroz" count={3} />
+<Reactars badgeType="notification" name="pmqueiroz" count={3} />
 ```
 ## Parameters
 
 | Parameter             | Required               | Default         | Type                                                   |
 | --------------------- | ---------------------- | --------------- | ------------------------------------------------------ |
 | badgeType             | yes                    | "none"          | "none", "notification", "status"                       |
-| name                  | yes                    | "Reactar"       | string                                                 |
+| name                  | yes                    | "Reactars"       | string                                                 |
 | badgePosition         | no                     | "top-right"     | "top-left", "top-right", "bottom-right", "bottom-left" |
 | badgeColor            | no                     | [BadgeColorsDefaults](#BadgeColorsDefaults) | [BadgeColorsDefaults](#BadgeColorsDefaults)                                 |
 | radii                 | no                     | "circle"        | "circle", "square", "rounded"                          |
@@ -82,5 +82,5 @@ import { ReactarNotification, ReactarStatus, ReactarDefault } from 'reactar'
 ```
 ## License
 
-[MIT](https://github.com/pmqueiroz/reactar/blob/master/LICENSE)
+[MIT](https://github.com/pmqueiroz/reactars/blob/master/LICENSE)
 

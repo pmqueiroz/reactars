@@ -2,7 +2,7 @@ name: Build
 on: [push]
   
 jobs:
-  reactar:
+  reactars:
     runs-on: ubuntu-latest
     steps:
       - name: Checkout 🛎️

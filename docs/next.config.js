@@ -12,5 +12,5 @@ const withBeforeBuild = require('./scripts/pre-build')({
 
 module.exports = withPlugins([[withNextra], [withBeforeBuild]], {
    assetPrefix: './',
-   basePath: process.env.NODE_ENV === 'development' ? '' : '/reactar',
+   basePath: process.env.NODE_ENV === 'development' ? '' : '/reactars',
 })
