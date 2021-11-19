@@ -9,6 +9,6 @@ describe('<Avatar />', () => {
    })
 
    it('should render', () => {
-      expect(screen.getByTestId(/reactar/i)).toHaveAttribute('name', 'Peam')
+      expect(screen.getByTestId(/reactars/i)).toHaveAttribute('name', 'Peam')
    })
 })

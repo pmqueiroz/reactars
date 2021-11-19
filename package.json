@@ -1,12 +1,12 @@
 {
-   "name": "reactar",
+   "name": "reactars",
    "version": "0.0.1",
    "description": "A React lib to generate avatars",
    "main": "dist/index.js",
    "files": [
       "dist"
    ],
-   "repository": "git@github.com:pmqueiroz/reactar.git",
+   "repository": "git@github.com:pmqueiroz/reactars.git",
    "author": "pmqueiroz",
    "license": "MIT",
    "private": false,

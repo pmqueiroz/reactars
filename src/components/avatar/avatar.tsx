@@ -26,7 +26,7 @@ export const Avatar = <BageType extends AllowedBadgeTypes = DefaultBadgeType>(pr
       badgePosition: 'top-right',
       badgeType,
       status: 'online',
-      name: 'Reactar',
+      name: 'Reactars',
       letter,
       notificationTextColor: '#FFFFFF',
       badgeColors: {
@@ -41,6 +41,6 @@ export const Avatar = <BageType extends AllowedBadgeTypes = DefaultBadgeType>(pr
    const stylesProps = mergeDeepRight(mergeDeepRight(defaultProps, restProps), overlapProps) as unknown as AvatarStylesOwnProps
 
    return (
-      <Wrapper data-testid="reactar" {...stylesProps} />
+      <Wrapper data-testid="reactars" {...stylesProps} />
    )
 }

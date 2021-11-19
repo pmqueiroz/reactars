@@ -18,7 +18,7 @@ export const Circle = Template.bind({})
 Circle.args = {
    badgeType: 'none',
    radii: 'circle',
-   name: 'Reactar'
+   name: 'Reactars'
 }
 
 export const Rounded = Template.bind({})
@@ -26,7 +26,7 @@ export const Rounded = Template.bind({})
 Rounded.args = {
    badgeType: 'none',
    radii: 'rounded',
-   name: 'Reactar'
+   name: 'Reactars'
 }
 
 export const Square = Template.bind({})
@@ -34,5 +34,5 @@ export const Square = Template.bind({})
 Square.args = {
    badgeType: 'none',
    radii: 'square',
-   name: 'Reactar'
+   name: 'Reactars'
 }
