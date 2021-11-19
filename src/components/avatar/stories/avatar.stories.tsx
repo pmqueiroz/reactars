@@ -134,13 +134,13 @@ export const Avatar = () => {
    return (
       <Wrapper >
          <Row>
-            {circle.map((props, i) => <Subject key={i} size={60} {...props as AvatarProps}></Subject>)}
+            {circle.map((props, i) => <Subject key={i} size={120} {...props as AvatarProps}></Subject>)}
          </Row>
          <Row>
-            {rounded.map((props, i) => <Subject key={i} size={60} {...props as AvatarProps}></Subject>)}
+            {rounded.map((props, i) => <Subject key={i} size={120} {...props as AvatarProps}></Subject>)}
          </Row>
          <Row>
-            {square.map((props, i) => <Subject key={i} size={60} {...props as AvatarProps}></Subject>)}
+            {square.map((props, i) => <Subject key={i} size={120} {...props as AvatarProps}></Subject>)}
          </Row>
       </Wrapper>
    )

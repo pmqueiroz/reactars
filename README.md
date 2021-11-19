@@ -1,9 +1,15 @@
+<div align="center">
+
 # Rectar
 A React lib to generate easily customizable avatars
 
 ![GitHub](https://img.shields.io/github/license/pmqueiroz/reactar?style=flat-square)
 ![npm](https://img.shields.io/npm/v/reactar?style=flat-square)
 ![npm type definitions](https://img.shields.io/npm/types/reactar?style=flat-square)
+
+
+   
+</div>
 
 ## Installation
 
@@ -32,7 +38,12 @@ or import separately each one
 ```ts
 import { ReactarNotification, ReactarStatus, ReactarDefault } from 'reactar'
 ```
+
 ### Examples
+
+<img width="450px" src="./.github/assets/examples.png" />
+
+### Usage Examples
 
 ```ts
 <Reactar badgeType="status" name="pmqueiroz" status="online" />
