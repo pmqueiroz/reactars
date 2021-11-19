@@ -1,6 +1,6 @@
 <div align="center">
 
-# Rectar
+# Reactars
 A React lib to generate easily customizable avatars
 
 ![GitHub](https://img.shields.io/github/license/pmqueiroz/reactars?style=flat-square)
