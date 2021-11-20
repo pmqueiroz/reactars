@@ -52,19 +52,19 @@ import { ReactarsNotification, ReactarsStatus, ReactarsDefault } from 'reactars'
 ```
 ## Parameters
 
-| Parameter             | Required               | Default         | Type                                                   |
-| --------------------- | ---------------------- | --------------- | ------------------------------------------------------ |
-| badgeType             | yes                    | "none"          | "none", "notification", "status"                       |
-| name                  | yes                    | "Reactars"       | string                                                 |
-| badgePosition         | no                     | "top-right"     | "top-left", "top-right", "bottom-right", "bottom-left" |
-| badgeColor            | no                     | [BadgeColorsDefaults](#BadgeColorsDefaults) | [BadgeColorsDefaults](#BadgeColorsDefaults)                                 |
-| radii                 | no                     | "circle"        | "circle", "square", "rounded"                          |
-| url                   | no                     | undefined       | string                                                 |
-| backgroundColor       | no                     | "#2A2C2C"       | CSSProperties['color']                                 |
-| size                  | no                     | 48              | px                                                     |
-| status                | if type "status"       | online          | "online", "busy", "offline", "idle"                    |
-| count                 | if type "notification" | undefined       | number                                                 |
-| notificationTextColor | if type "notification" | "#FFFFFF"       | CSSProperties['color']                                 |
+| Parameter | Required | Default | Type |
+| --------- | -------- | ------- | ---- |
+| `badgeType` | yes | `"none"` | `"none"`, `"notification"`, `"status"` |
+| `name` | yes | `"Reactars"` | `string` |
+| `badgePosition` | no | `"top-right"` | `"top-left"`, `"top-right"`, `"bottom-right"`, `"bottom-left"` |
+| `badgeColor` | no | [BadgeColorsDefaults](#BadgeColorsDefaults) | [BadgeColorsDefaults](#BadgeColorsDefaults) |
+| `radii` | no | `"circle"` | `"circle"`, `"square"`, `"rounded"` |
+| `url` | no | `undefined` | `string` |
+| `backgroundColor` | no | `"#2A2C2C"` | `CSSProperties['color']` |
+| `size` | no | `48` | `px` |
+| `status` | if type `"status"` | `"online"` | `"online"`, `"busy"`, `"offline"`, `"idle"` |
+| `count` | if type `"notification"` | `undefined` | `number` |
+| `notificationTextColor` | if type `"notification"` | `"#FFFFFF"` | `CSSProperties['color']` |
                                                    
 
 > Obs.: Size will be converted to rem in base16
