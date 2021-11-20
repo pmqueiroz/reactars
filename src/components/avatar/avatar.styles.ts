@@ -17,7 +17,7 @@ const badgeIntrinsicProps = (props: AvatarStylesOwnProps) => css`
    width:calc(${toRem(props.size)} / 4);
    height:calc(${toRem(props.size)} / 4);
    border-radius: 50%;
-   ${() => badgePositionMap()[props.radii][props.badgePosition]};
+   ${() => badgePositionMap(props.badgeOffset)[props.radii][props.badgePosition]};
 `
 
 export const Wrapper = styled.div`
