@@ -1,9 +1,16 @@
 import { ReactNode } from 'react'
 import Reactars from 'reactars'
 import { useForm, Controller } from 'react-hook-form'
-
-import { AvatarProps, AllowedBadgeTypes, Status } from '../../src/components/avatar/interface'
 import { ColorPicker } from '../components/color-picker'
+
+/**
+ * @todo import this from package
+*/
+// import { AvatarProps, AllowedBadgeTypes, Status } from 'reactars'
+
+type AvatarProps = any
+type AllowedBadgeTypes = any
+type Status = any
 
 interface WrapperProps extends React.HTMLAttributes<HTMLDivElement> {
    children: ReactNode
