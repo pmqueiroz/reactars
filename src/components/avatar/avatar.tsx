@@ -46,6 +46,7 @@ export const Avatar = <BageType extends AllowedBadgeTypes = DefaultBadgeType>(pr
    )
 }
 
+export const ReactarsNotification = (props: Omit<AvatarProps<'notification'>, 'badgeType'>) => <Avatar<'notification'> badgeType="notification" {...props} />
 
 export const ReactarsStatus = (props: Omit<AvatarProps<'status'>, 'badgeType'>) => <Avatar<'status'> badgeType="status"  {...props} />
 
