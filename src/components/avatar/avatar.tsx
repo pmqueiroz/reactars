@@ -29,6 +29,7 @@ export const Avatar = <BageType extends AllowedBadgeTypes = DefaultBadgeType>(pr
       name: 'Reactars',
       letter,
       notificationTextColor: '#FFFFFF',
+      badgeOffset: 0,
       badgeColors: {
          notification: '#E65A4D',
          busy: '#E65A4D',
@@ -45,7 +46,6 @@ export const Avatar = <BageType extends AllowedBadgeTypes = DefaultBadgeType>(pr
    )
 }
 
-export const ReactarsNotification = (props: Omit<AvatarProps<'notification'>, 'badgeType'>) => <Avatar<'notification'> badgeType="notification"  {...props} />
 
 export const ReactarsStatus = (props: Omit<AvatarProps<'status'>, 'badgeType'>) => <Avatar<'status'> badgeType="status"  {...props} />
 
