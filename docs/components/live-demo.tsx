@@ -104,7 +104,7 @@ export const LiveDemo = () => {
             url={url}
             size={size}
             status={status}
-            badgeOffset={20}
+            badgeOffset={Number(badgeOffset)}
             notificationTextColor={notificationTextColor}
             badgeColors={{
                notification: notificationColor,
@@ -228,7 +228,7 @@ export const LiveDemo = () => {
             <tr>
                <td>badgeOffset</td>
                <td>
-                  <input type="range" min="-60" max="60" {...register('badgeOffset')} />
+                  <input type="range" min="-160" max="160" {...register('badgeOffset')} />
                </td>
             </tr>
             <tr>

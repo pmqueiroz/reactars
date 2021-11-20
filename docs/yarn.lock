@@ -3178,10 +3178,10 @@ react@^17.0.2:
     loose-envify "^1.1.0"
     object-assign "^4.1.1"
 
-reactars@^1.2.0:
-  version "1.2.0"
-  resolved "https://registry.yarnpkg.com/reactars/-/reactars-1.2.0.tgz#6512296b91335e78de3942916bb4d64bc85d523d"
-  integrity sha512-uq1KiNA06VbBHgYkKcuwGiX6Ro0VWggEyuJQqa6NFc2jNDs3K1H0CX+mlK6GraulOi64HTnwPeYf1feEnEZjAA==
+reactars@^1.2.1:
+  version "1.2.1"
+  resolved "https://registry.yarnpkg.com/reactars/-/reactars-1.2.1.tgz#f9e42abdb776450032fe98122ff52ba48733ffc6"
+  integrity sha512-Yv3Wxdv17c2IgrzTZTrPR3XBNwQ4BpVQVAetoHK5GhrCAoQrVbZvcQEDDoE+y1D1f+0W6ozAMM365TL7hgzuNQ==
   dependencies:
     ramda "^0.27.1"
     react "^17.0.2"
