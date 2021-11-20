@@ -32,6 +32,7 @@ export interface AvatarStylesOwnProps {
    badgePosition: BadgePosition
    badgeColors: BadgeColors
    backgroundColor: string
+   badgeOffset?: number
    letter: string
    size: number
 }

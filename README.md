@@ -62,6 +62,7 @@ import { ReactarsNotification, ReactarsStatus, ReactarsDefault } from 'reactars'
 | `url` | no | `undefined` | `string` |
 | `backgroundColor` | no | `"#2A2C2C"` | `CSSProperties['color']` |
 | `size` | no | `48` | `px` |
+| `badgeOffset` | no | `0` | `number` |
 | `status` | if type `"status"` | `"online"` | `"online"`, `"busy"`, `"offline"`, `"idle"` |
 | `count` | if type `"notification"` | `undefined` | `number` |
 | `notificationTextColor` | if type `"notification"` | `"#FFFFFF"` | `CSSProperties['color']` |
