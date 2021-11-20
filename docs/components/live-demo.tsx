@@ -53,6 +53,7 @@ export const LiveDemo = () => {
       size: 250,
       status: 'online',
       count: 0,
+      badgeOffset: 0,
       notificationTextColor: '#ffffff',
       notificationColor: '#e65a4d',
       busyColor: '#e65a4d',
@@ -74,6 +75,7 @@ export const LiveDemo = () => {
    const status = watch('status')
    const count = watch('count')
    const notificationTextColor = watch('notificationTextColor')
+   const badgeOffset = watch('badgeOffset')
    
    const notificationColor = watch('notificationColor')
    const busyColor = watch('busyColor')
@@ -102,6 +104,7 @@ export const LiveDemo = () => {
             url={url}
             size={size}
             status={status}
+            badgeOffset={Number(badgeOffset)}
             notificationTextColor={notificationTextColor}
             badgeColors={{
                notification: notificationColor,
@@ -220,6 +223,12 @@ export const LiveDemo = () => {
                <td>count</td>
                <td>
                   <input type="range" min="0" max="99" {...register('count')} />
+               </td>
+            </tr>
+            <tr>
+               <td>badgeOffset</td>
+               <td>
+                  <input type="range" min="-160" max="160" {...register('badgeOffset')} />
                </td>
             </tr>
             <tr>
