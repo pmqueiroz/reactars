@@ -15,7 +15,8 @@
       "build:local": "rm -rf dist && rollup -c",
       "test": "jest",
       "storybook": "start-storybook -p 6006",
-      "build-storybook": "build-storybook"
+      "build-storybook": "build-storybook",
+      "release": "./scripts/publish.sh"
    },
    "devDependencies": {
       "@babel/core": "^7.16.0",
